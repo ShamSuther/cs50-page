@@ -146,7 +146,7 @@ li.nav-item {
     line-height: 1;
     display: flex;
     align-items: center;
-    transition: 250ms ease-in;
+    transition: 150ms ease-in;
     gap: 5px;
 }
 
@@ -154,7 +154,8 @@ li.nav-item {
     color: var(--theme-clr) !important;
 }
 
-a.nav-link ion-icon {
+.nav-link ion-icon {
+    transition: 150ms ease-in;
     font-size: 18px;
 }
 
