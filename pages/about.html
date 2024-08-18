@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="icon" type="image/x-icon" href="../assets/harvard.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+        <link href="../styles.css" rel="stylesheet">
+        <title>About</title>
+        <style>
+            body {
+                background: #212529;
+            }
+
+            .mcontent {
+                padding: 6rem 0 5rem 0;
+            }
+
+            .mcontent::after {
+                content: '';
+                inset: 0;
+                position: absolute;
+                background: #00000080;
+                backdrop-filter: blur(3px);
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header class="head position-absolute top-0 end-0 start-0">
+            <nav class="navbar navbar-expand-lg bg-dark border-black">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <div class="title text-light">
+                            <h2 class="m-0">This is CS50.</h2>
+                        </div>
+                    </a>
+                    <button class="navbar-toggler text-white border border-light  justify-content-center align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <p class="m-0 fs-6">Menu</p>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav gap-3">
+                            <li class="nav-item text-lg-center">
+                                <a class="nav-link link-secondary" aria-current="page" href="./about.html">About
+                                </a>
+                            </li>
+                            <li class="nav-item text-lg-center">
+                                <a class="nav-link link-secondary" aria-current="page" href="./instructors.html">Instructors
+                                </a>
+                            </li>
+                            <li class="nav-item text-lg-center">
+                                <a class="nav-link link-secondary" aria-current="page" href="./new.html">What's new?
+                                </a>
+                            </li>
+                            <li class="nav-item text-lg-center">
+                                <a class="nav-link link-secondary" href="https://cs50.harvard.edu/donate" target="_blank">Donate
+                                    <ion-icon name="exit-outline"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- main -->
+        <main>
+            <div class="mcontent">
+                <div class="container-fluid cont">
+                    <h2 class="text-white border-bottom border-1">About this course</h2>
+                    <div>
+                        <p class="details" style="font-size:16px;">This is CS50, Harvard University’s introduction to
+                            the intellectual enterprises of computer
+                            science
+                            and the art of programming, for concentrators and non-concentrators alike, with or without
+                            prior
+                            programming experience. (Two thirds of CS50 students have never taken CS before.) This
+                            course
+                            teaches you how to solve problems, both with and without code, with an emphasis on
+                            correctness,
+                            design, and style. Topics include computational thinking, abstraction, algorithms, data
+                            structures,
+                            and computer science more generally. Problem sets inspired by the arts, humanities, social
+                            sciences,
+                            and sciences. More than teach you how to program in one language, this course teaches you
+                            how to
+                            program fundamentally and how to teach yourself new languages ultimately. The course starts
+                            with a
+                            traditional but omnipresent language called C that underlies today’s newer languages, via
+                            which
+                            you’ll learn not only about functions, variables, conditionals, loops, and more, but also
+                            about how
+                            computers themselves work underneath the hood, memory and all. The course then transitions
+                            to
+                            Python, a higher-level language that you’ll understand all the more because of C. Toward
+                            term’s end,
+                            the course introduces SQL, via which you can store data in databases, along with HTML, CSS,
+                            and
+                            JavaScript, via which you can create web and mobile apps alike. Course culminates in a final
+                            project.</p>
+                    </div>
+
+                    <!-- accordion -->
+
+                    <details>
+                        <summary class="text-white">Watch an Introduction</summary>
+                        <iframe class="vdo" src="https://www.youtube.com/embed/3oFAJtFE8YU?si=GHrmS0E1hGiqus4-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+                    </details>
+
+                    <!-- learn -->
+
+                    <h2 class="text-white border-bottom border-1">What you'll learn</h2>
+                    <p class="mb-4">Introduction to the intellectual enterprises of computer science and the art of
+                        programming.
+                        This course teaches students how to think algorithmically and solve problems efficiently.
+                        Topics include abstraction, algorithms, data structures, encapsulation, resource management,
+                        security, software engineering, and web programming, which will be covered in following
+                        weeks:</p>
+                    <div class="row ">
+                        <div class="col-lg col-md-6 col-sm-12">
+                            <ul class="text-secondary m-0">
+                                <li>
+                                    <bold class="text-white">Week 0</bold> Scratch
+                                </li>
+                                <li>
+                                    <bold class="text-white">Week 1</bold> C
+                                </li>
+                                <li>
+                                    <bold class="text-white">Week 2</bold> Arrays
+                                </li>
+                                <li>
+                                    <bold class="text-white">Week 3</bold> Algorithms
+                                </li>
+                                <li>
+                                    <bold class="text-white">Week 4</bold> Memory
+                                </li>
+                                <li>
+                                    <bold class="text-white">Week 5</bold> Data Structures
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="col-lg col-md-6 col-sm-12">
+                            <ul class="text-secondary">
+                                <li>
+                                    <bold class="text-white">Week 6</bold> Python
+                                </li>
+                                <li>
+                                    <bold class="text-white">Week 7</bold> SQL
+                                </li>
+                                <li>
+                                    <bold class="text-white">Week 8</bold> HTML, CSS, JavaScript
+                                </li>
+                                <li>
+                                    <bold class="text-white">Week 9</bold> Flask
+                                </li>
+                                <li>
+                                    <bold class="text-white">Week 10</bold> Emoji
+                                </li>
+                                <li>
+                                    <bold class="text-white">Cybersecurity</bold>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <!-- HTTTC -->
+
+                    <h2 class="text-white border-bottom border-1">How to Take this Course</h2>
+                    <p class="mb-4">Even if you are not a student at Harvard, you are welcome to “take” this course for
+                        free via this <a href="https://cs50.harvard.edu/x/2023/">OpenCourseWare</a> by working your way
+                        through the course’s eleven weeks of material.
+                        If you’d like to submit the course’s problem sets and final project for feedback, be sure to
+                        <a href="https://courses.edx.org/register">create an edX account</a>
+                        , if you haven’t already. Ask questions along the way via any of the
+                        course’s <a href="https://cs50.harvard.edu/x/2023/communities/">communities</a>!
+                    </p>
+                    <h2 class="text-white border-bottom border-1">Other Courses</h2>
+                    <div class="row justify-content-between flex-wrap">
+                        <div class="course col-lg-4 col-md-6 col-sm-12 d-flex flex-column justify-content-start align-items-center text-white text-center">
+                            <img class="w-100 h-100 object-fit-cover border rounded" src="https://pll.harvard.edu/sites/default/files/styles/16_9_medium/public/course/CS50S_pll.png?itok=b7x2JUsp">
+                            <a class="course-title" href="#">CS50 Scratch</a>
+                        </div>
+                        <div class="course col-lg-4 col-md-6 col-sm-12 d-flex flex-column justify-content-start align-items-center text-white text-center">
+                            <img class="w-100 h-100 object-fit-cover border rounded" src="https://pll.harvard.edu/sites/default/files/styles/16_9_medium/public/course/CS50T_pll.png?itok=ewtoyoF6">
+                            <a class="course-title" href="#">CS50 Understanding Technology</a>
+                        </div>
+                        <div class="course col-lg-4 col-md-6 col-sm-12 d-flex flex-column justify-content-start align-items-center text-white text-center">
+                            <img class="w-100 h-100 object-fit-cover border rounded" src="https://pll.harvard.edu/sites/default/files/styles/16_9_medium/public/course/CS50B_pll.png?itok=3Nqzd5rQ">
+                            <a class="course-title" href="#">CS50 Business</a>
+                        </div>
+                        <div class="course col-lg-4 col-md-6 col-sm-12 d-flex flex-column justify-content-start align-items-center text-white text-center">
+                            <img class="w-100 h-100 object-fit-cover border rounded" src="https://pll.harvard.edu/sites/default/files/styles/16_9_medium/public/course/CS50W_pll.png?itok=pvEE-46J">
+                            <a class="course-title" href="#">CS50 Web</a>
+                        </div>
+                        <div class="course col-lg-4 col-md-6 col-sm-12 d-flex flex-column justify-content-start align-items-center text-white text-center">
+                            <img class="w-100 h-100 object-fit-cover border rounded" src="https://pll.harvard.edu/sites/default/files/styles/16_9_large/public/course/CS50AI_pll.png?itok=lxMIpyrW">
+                            <a class="course-title" href="#">CS50 Ai</a>
+                        </div>
+                        <div class="course col-lg-4 col-md-6 col-sm-12 d-flex flex-column justify-content-start align-items-center text-white text-center">
+                            <img class="w-100 h-100 object-fit-cover border rounded" src="https://pll.harvard.edu/sites/default/files/styles/16_9_medium/public/course/CS50G_pll.png?itok=cIZLdXOb">
+                            <a class="course-title" href="#">CS50 Games</a>
+                        </div>
+                    </div>
+
+                    <!-- end of content -->
+
+                </div>
+            </div>
+        </main>
+        <!-- scripts -->
+        <script src="../script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+
+</html>

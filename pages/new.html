@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="icon" type="image/x-icon" href="../assets/harvard.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+        <link href="../styles.css" rel="stylesheet">
+        <title>New</title>
+        <style>
+            .cont {
+                padding: 2rem;
+            }
+
+            .mcontent {
+                background-image: url("../assets/bg-3.jpg");
+            }
+
+            .mcontent::after {
+                content: '';
+                inset: 0;
+                position: absolute;
+                background: #00000080;
+                backdrop-filter: blur(3px);
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header class="head position-absolute top-0 end-0 start-0">
+            <nav class="navbar navbar-expand-lg bg-dark border-black">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <div class="title text-light">
+                            <h2 class="m-0">This is CS50.</h2>
+                        </div>
+                    </a>
+                    <button class="navbar-toggler text-white border border-light  justify-content-start align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <p class="m-0 fs-6">Menu</p>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav gap-3">
+                            <li class="nav-item text-lg-center">
+                                <a class="nav-link link-secondary" aria-current="page" href="./about.html">About
+                                </a>
+                            </li>
+                            <li class="nav-item text-lg-center">
+                                <a class="nav-link link-secondary" aria-current="page" href="./instructors.html">Instructors
+                                </a>
+                            </li>
+                            <li class="nav-item text-lg-center">
+                                <a class="nav-link link-secondary" aria-current="page" href="./new.html">What's new?</a>
+                            </li>
+                            <li class="nav-item text-lg-center">
+                                <a class="nav-link link-secondary" href="https://cs50.harvard.edu/donate" target="_blank">Donate
+                                    <ion-icon name="exit-outline"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- main -->
+        <main>
+            <div class="mcontent">
+                <div class="container-fluid cont">
+                    <h2 class="text-white border-bottom border-1">What’s new for <span class="y"></span>?</h2>
+                    <div class="new">
+                        <div>
+                            <div>
+                                <ul class="updates text-secondary m-0 my-4">
+                                    <li>
+                                        <span class="text-white">
+                                            New-and-improved <a href="https://cs50.harvard.edu/x/2023/weeks/">lectures</a>, without
+                                            masks!
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="text-white">
+                                            Lectures are now supplemented by weekly “sections,” optional videos that
+                                            review the week’s material in more detail!
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="text-white">
+                                            Dark mode for code in lectures!
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="text-white">
+                                            New problems in <a href="https://cs50.harvard.edu/x/2023/psets/2/">Problem
+                                                Set 2</a> and <a href="https://cs50.harvard.edu/x/2023/psets/4/">Problem
+                                                    Set 4</a> and two updated <a href="https://cs50.harvard.edu/x/2023/psets/4/">labs</a>!
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="text-white">
+                                            Many new practice problems in most <a href="https://cs50.harvard.edu/x/2023/weeks/">weeks</a>!
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="text-white">
+                                            A new-and-improved gradebook at <a href="https://cs50.me/">cs50.me</a>!
+                                        </span>
+                                    </li>
+                                </ul>
+                                <p class="mb-4">All this and more!</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h2 class="text-white border-bottom border-1">Did you start CS50x in <span id="prev_y"></span> or
+                        earlier?</h2>
+                    <div>
+                        <p class="details" style="font-size:16px;">
+                            Be sure to review this year’s <a href="https://cs50.harvard.edu/x/2023/faqs/">FAQs</a>!
+                        </p>
+                    </div>
+
+                    <!-- end of content -->
+
+                </div>
+            </div>
+        </main>
+
+        <!-- scripts -->
+        <script src="../script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+
+</html>
