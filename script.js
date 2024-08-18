@@ -1,23 +1,19 @@
 const date = new Date();
 const year = (date.getFullYear());
 const links = document.querySelectorAll(".nav-link");
-const y = document.querySelectorAll(".y");
-const y2 = document.querySelector("#prev_y");
+const current_year = document.querySelectorAll(".y");
 
 var currentPath = window.location.href;
 
-if (currentPath.includes("/index.html")) {
-    document.title = `CS50 '${year % 100}`;
-} else {
+if (currentPath.includes("/pages/")) {
     document.title = `${document.title} - CS50 '${year % 100}`;
+} else {
+    document.title = `CS50 '${year % 100}`;
 }
 
-y.forEach(y => {
-    y.innerHTML = year;
+current_year.forEach(y => {
+    current_year.innerHTML = year;
 })
-
-y2.innerHTML = (year - 1);
-
 
 // active page
 
